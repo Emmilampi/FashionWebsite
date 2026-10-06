@@ -21,7 +21,9 @@ function renderGrid() {
   const grid = document.getElementById("product-grid");
   if (!grid) return;
   const category = grid.dataset.category || "all";
-  const items = PRODUCTS.filter((p) => category === "all" || p.category === category);
+  const items = PRODUCTS.filter(
+    (p) => category === "all" || p.category === category,
+  );
   grid.innerHTML = items.map(productCard).join("");
 }
 

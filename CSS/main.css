@@ -1,17 +1,3 @@
-/* FONTS */
-
-.limelight-regular {
-  font-family: "Limelight", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.gochi-hand-regular {
-  font-family: "Gochi Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
-
 body {
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,7 +8,7 @@ body {
 
 /* The logo scales with the width of the page, but never gets smaller than 180px or bigger than 400px */
 header > a > img {
-  width: clamp(180px, 35vw, 400px);
+  width: clamp(180px, 55vw, 400px);
   height: auto;
   margin-bottom: 5%;
   margin-top: 5%;
@@ -67,6 +53,7 @@ li:hover {
 section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
   margin-top: 5rem;
 }
 
@@ -93,8 +80,10 @@ section img {
 }
 
 .cart-main h2 {
-  font-size: 1.5em;
+  font-family: "colo-pro", sans-serif;
+  font-size: 3em;
   text-shadow: #ffffff 0px 0px 10px;
+  text-decoration: underline;
   margin-bottom: 60px;
 }
 
@@ -112,7 +101,8 @@ section img {
 }
 
 #cart-items img {
-  width: 10vw;
+  width: 20vw;
+  margin: 5%;
 }
 
 /*CART ICON IN NAVBAR*/
@@ -160,6 +150,13 @@ section img {
   margin-left: 50px;
 }
 
+.productdetailtext h2 {
+  font-family: "colo-pro", sans-serif;
+  font-size: 2.5em;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
 /*ADD TO CART BUTTON*/
 
 /*Inspiration for the add to cart button animation from this site:*/
@@ -194,10 +191,16 @@ button {
 
 button:hover {
   opacity: 0.8;
+  transform: scale(1.04);
 }
 
 .remove-btn:hover {
   background-color: rgb(218, 81, 81);
+}
+
+.remove-btn:active {
+  box-shadow: 0 3px #949494;
+  transform: translateY(3px);
 }
 
 /*FOOTER*/
@@ -249,41 +252,33 @@ footer img {
 
 @media only screen and (max-width: 1300px) {
   .productdetailoverview {
-    display: flex;
+    margin-inline: clamp(1rem, 8vw, 150px);
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin-left: 50px;
-    margin-right: 50px;
+    margin-right: 50px; */
   }
 }
 
 @media only screen and (max-width: 800px) {
   .cart-main {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
-
-  .welcome-text {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: normal;
-    font-size: 1.2rem;
-    color: rgb(72, 85, 74);
     margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-inline: clamp(1rem, 10vw, 200px);
   }
+  /* margin-left: 100px;
+    margin-right: 100px;
+  } */
 }
 
 @media only screen and (max-width: 650px) {
   .backgroundimage {
-    width: 100vw;
-    height: 100vh;
     background-image:
       linear-gradient(rgba(255, 153, 153, 0) 0%, 95%, rgba(203, 208, 208) 100%),
       url("../Img/backgroundphoto2.jpg");
-    background-size: cover;
-    background-position: center;
+
+    margin-left: 0px;
   }
 
   ul {
@@ -303,7 +298,7 @@ footer img {
   }
 
   section img {
-    max-width: 50vw;
+    max-width: 60vw;
   }
 
   .productdetailoverview {
