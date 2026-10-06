@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cold Days</title>
+
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <!--Link to the css page-->
+
+    <!-- Order matters: data, then cart logic, then product rendering -->
+    <script src="../JS/products-data.js" defer></script>
+    <script src="../JS/script.js" defer></script>
+    <script src="../JS/products.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--link to the typefont for the header-->
+
+    <!--link to font awesome for the icons in footer-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    
+  </head>
+
+  <body data-root="../">
+    <header>
+      <a href="../index.html"><h1>Cold days</h1></a>
+
+      <h2>All you need to stay warm</h2>
+
+      <nav class="topnav">
+        <ul>
+          <a href="../index.html"><li>Home</li></a>
+          <a href="clothes.html"><li>Clothes</li></a>
+          <a href="outwear.html"><li>Outwear</li></a>
+          <a href="shoes.html"> <li>Shoes</li></a>
+          <a href="acc.html"> <li>Accessories</li></a>
+          <a href="products.html"> <li>Shop All</li></a>
+
+          <button class="cart-button" type="button">
+            <a href="cart.html"
+              ><img src="../Img/cartlogo2.svg" width="25px" height="25px" /></a
+            ><span id="cart-count">0</span>
+          </button>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Product listings section-->
+    <main>
+     
+        <section id="product-grid" data-category="clothes"></section>
+
+
+    </main>
+
+    <footer>
+      <p>Follow us on socials!</p>
+
+      <!--Social media icons inspired by this W3Schools tutorial: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp>-->
+
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <p>Copyright Cold Days &copy 2026</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cold Days</title>
+
+    <!--Link to the css page-->
+    <link rel="stylesheet" href="CSS/main.css" />
+
+    <!--Link to the js page-->
+    <script src="JS/script.js" defer></script>
+
+    <!--link to the different fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--link to font awesome for the icons in footer-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body data-root="">
+    <header>
+      <img
+        src="colddayslogo.png"
+        alt="Cold Days Logo"
+        width="400px"
+        height="auto"
+      />
+    </header>
+
+    <!--the navigation bar is a list of links to the different sections of the website-->
+    <nav class="topnav">
+      <ul>
+        <a href="index.html"><li>Home</li></a>
+        <a href="HTML/clothes.html"><li>Clothes</li></a>
+        <a href="HTML/outwear.html"><li>Outwear</li></a>
+        <a href="HTML/shoes.html"> <li>Shoes</li></a>
+        <a href="HTML/acc.html"> <li>Accessories</li></a>
+        <a href="HTML/products.html"> <li>Shop All</li></a>
+
+        <button class="cart-button" type="button">
+          <a href="HTML/cart.html"
+            ><img src="Img/cartlogo2.svg" width="25px" height="25px" /></a
+          ><span id="cart-count">0</span>
+        </button>
+
+        <!--The cart button includes an image of a shopping cart and a span element to display the number of items in the cart. The button is styled with CSS to match the overall design of the site. 
+Inspiration for the cart button and the cart count badge was taken from this Stack Overflow post:
+https://stackoverflow.com/questions/51304169/how-to-put-the-number-at-top-right-corner-of-cart-icon
+
+-->
+      </ul>
+    </nav>
+
+    <div class="backgroundimage"></div>
+
+    <footer>
+      <p>Follow us on socials!</p>
+
+      <!--Social media icons inspired by this W3Schools tutorial: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp>-->
+
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <p>Copyright Cold Days &copy 2026</p>
+    </footer>
+  </body>
+</html>
