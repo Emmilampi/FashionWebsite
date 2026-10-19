@@ -1,6 +1,4 @@
 // Renders product listings and the product detail page from PRODUCTS.
-// Each HTML page sets <body data-root="../"> (or "" for index) so image
-// and link paths work from any folder depth.
 
 const ROOT = document.body.dataset.root || "";
 
@@ -15,8 +13,7 @@ function productCard(p) {
     </figure>`;
 }
 
-// Listing pages: <section id="product-grid" data-category="outwear"></section>
-// Use data-category="all" (or omit it) for Shop All.
+// Listing pages
 function renderGrid() {
   const grid = document.getElementById("product-grid");
   if (!grid) return;
@@ -27,7 +24,7 @@ function renderGrid() {
   grid.innerHTML = items.map(productCard).join("");
 }
 
-// Detail page: product.html?id=blackpant
+// Detail page
 function renderDetail() {
   const container = document.getElementById("product-detail");
   if (!container) return;
